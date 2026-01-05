@@ -1,35 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Anika Mahesh</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      max-width: 700px;
-      margin: 60px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-    }
-    a { color: #2563eb; text-decoration: none; }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/4173c9a524.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <h1>Anika Mahesh</h1>
-  <p>Engineer.</p>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>
-      lots of projects.
-    </li>
-  </ul>
+  <div class="section">
+    
+    <!-- LEFT IMAGE (same directory) -->
+    <img src="profile_picture.png" alt="Profile">
 
-  <h2>Contact</h2>
-  <p>
-    <a href="https://github.com/AnikaMahesh">GitHub</a> ·
-    <a href="mailto:amahesh@email.com">Email</a>
-  </p>
+    <!-- RIGHT SIDE CONTENT -->
+    <div class="right-content">
+      <h1>Anika Mahesh</h1>
+      <h3>Working on Building AI and deploying it at the Edge</h3>
+
+      <table class="contact-table">
+          <td><a href="https://github.com/AnikaMahesh"><i class="fa-brands fa-github"></i></a></td>
+          <td><a href="mailto:amahesh@olin.edu"><i class="fa-solid fa-envelope"></i></a></td>
+          <td><a href="https://www.linkedin.com/in/anikamahesh/"><i class="fa-brands fa-linkedin"></i></a></td>
+      </table>
+    </div>
+
+  </div>
+  <div class="divider"></div>
+  <div class="section"><h1 >About Me</h1></div>
+    
+  <div class="section">
+
+    <p>
+    I am Anika Mahesh, a Electrical and Computer Engineering student at Olin College of Engineering. <br><br> 
+
+    I am interested in software and hardware that enables machine learning models to run and their intersection. My recent explorations have been in machine learning algorithms that can be deployed on robots to solve real world problems, particularly in the domain of oceanography and land exploration. <br><br> 
+
+    My first year internship was at WHOI working on color card detection  with machine learning the CUREE autonomous underwater vehicle. Color card detection is important for color correcting underwater imagery and improving the accuracy of downstream algorithms like fish detection and environment reconstruction. <br><br> 
+
+    Additionally, I have worked on numerous projects in the domains of applied perception and embedded systems and in the future I want to do more projects relating to machine learning on the edge or aboard robotics. <br><br> 
+
+    </p>
+  </div>
+
+  <!-- <div class="divider"></div>
+
+  <div class="section">
+    <h1>Active R&D</h1>
+    <p>
+    
+
+    </p>
+  </div>
+-->
+
+<div class="divider"></div>
+<div class="section"><h1 >Research Experience</h1></div>
+  <div class="section">
+    <img src="whoipic.png" alt="Simulation Picture">
+
+    <!-- RIGHT SIDE CONTENT -->
+    <div class="right-content">
+    <h2>Color Card Detection on CUREE AUV - Woods Hole Oceanographic Institution (WHOI) - Summer 2025</h2>
+    <p>
+    <ul>
+        <li>I designed and implemented an object detection pipeline using YOLOv11 and mutual information–based image registration to identify and extract information from small, low-resolution underwater color cards.</li>
+        <li>Generated a synthetic dataset in NVIDIA Isaac Sim, simulating varied lighting and water conditions to improve model generalization.</li>
+        <li>Researched and designed a mutual information-based image registration pipeline.</li>
+        <li>The work was presented in the WHOI summer student postor presentation and contributed to lab preliminary research.</li>
+    </ul>
+
+    </p>
+    </div>
+  </div>
+ <div class="section">
+       <!-- LEFT IMAGE (same directory) -->
+    <img src="color_correction.png" alt="Simulation Picture">
+
+    <!-- RIGHT SIDE CONTENT -->
+    <div class="right-content">
+        <h2>Documented Performance of Off the shelf Color Correction Algorithms on Deep Sea Footage- Spring 2025</h2>
+        <ul>
+            <li>Color correction is important to remove haze and light attenuation on underwater images however most of these algorithms are built for coastal regions where there is a lot lighter. This project aimed to test the functionality of these algorithms deep in ocean.</li>
+            <li>Read literature on underwater color corrections and chose a few off the shelf algorithms to test on a deep-sea dataset of hydrothermal vents</li>
+            <li>Made qualitative observations on the performance of different algorithms</li>
+            <li>Attempted to use light enhancing algorithms to brighten deep sea imagery after color correction which resulted in information loss and amplification of errors in color correction.</li>
+        </ul>
+        <a href="https://drive.google.com/drive/folders/1e7ECbx-REWdskGydwUVYhsJTQhqxT7II?usp=drive_link">Read More</a>
+    </div>
+  </div>
+
+  <div class="section">
+       <!-- LEFT IMAGE (same directory) -->
+    <img src="quantum_graph.png" alt="Simulation Picture">
+
+    <!-- RIGHT SIDE CONTENT -->
+    <div class="right-content">
+        <h2>Investigating Single Qubit Interactions - Mentorship at Harvard Quantum Initiative - Fall 2025</h2>
+        <ul>
+            <li> Mentor: Prof. Nishant Sule
+            <li> Implementing simulations of spin precession and Rabi oscillations using Hamiltonian-based
+                models in Python QuTiP library </li>
+            <li>Simulated and calculated time evolved expectation value and probablity values during spin precession and rabi oscillations</li>
+            <li> Solved time-dependent Schrödinger equation with numerical integration techniques to analyze qubit dynamics. </li>
+	        <li>Produced a technical blog post explaining the derivations and code for educational outreach</li>
+        </ul>
+        <a href="">Read More</a>
+    </div>
+  </div>
+    
+
+
+
+ <div class="section">
+       <!-- LEFT IMAGE (same directory) -->
+    <img src="aaas.png" alt="Simulation Picture">
+
+    <!-- RIGHT SIDE CONTENT -->
+    <div class="right-content">
+        <h2>Finetuning OpenAI's Whisper to better Transcribe non Standard Speech Patterns - Fall 2024</h2>
+        <ul>
+            <li>Fine-tuned Whisper for stuttering speech in both English and Mandarin </li>
+            <li>One of the major constraints we faced was limited GPU access, so we had to be strategic with our training running intermediate models, experimenting with learning rates, and choosing a cloud computing platform to use. We Experimented with Google Colab and Amazon Sage maker for High Performance Computing.</li>
+            <li>In the end, we achieved a 14.2% reduction in Word Error Rate for English and a 47.4% reduction in Character Error Rate for Mandarin and presented our findings as a poster at the AAAS conference.</li>
+        </ul>
+        <a href="https://drive.google.com/file/d/12OUlQ5KcWmqteRbw2z5avFG1Uvo6f6oW/view?usp=sharing">Read More</a>
+    </div>
+  </div>
+
+<div class="section"><h1 >Systems Integration Experience</h1></div>
+   <div class="section">
+       <!-- LEFT IMAGE (same directory) -->
+    <img src="r2d2.png" alt="Simulation Picture">
+
+    <!-- RIGHT SIDE CONTENT -->
+    <div class="right-content">
+        <h2>Astromech - OL1N - R2D2 clone - Fall 2025</h2>
+        <ul>
+            	
+            <li>We created our own astromech which we could drive around and control with a remote controller connected to the robot via Bluetooth. It also beeped if it detected a person in front of it. I led the electrical and software integration for the robot system.</li>
+            <li> I implemented the camera and speaker integration for the robot head as well as the motor system for the head and drive motors. I also worked on the Bluetooth connection on the robot side. I did all the voltage calculations and installed necessary estops and fuses to ensure the robot was safe.</li>
+            <li> Debugged Electrical System with Oscilloscope and multimeter to verify system functioning when the motor stalls and signals sent to the sabertooth motor controller and the microstep driver were in the valid format.</li>
+        <a href="https://olincollege.github.io/pie-2025-03/docs/ol-1n/">Read More</a>
+    </div>
+  </div>
+
+     <div class="section">
+       <!-- frame with glasses_video.mp4 -->
+    <iframe src="glasses_video.mp4" frameborder="0"></iframe>
+
+    <!-- RIGHT SIDE CONTENT -->
+    <div class="right-content">
+        <h2>ADHD Glasses - Spring 2025</h2>
+        <ul>
+            	
+            <li>Glasses that block out peripheral vision at the press of a button. This would improve the focus and concentration of people with ADHD or people who have difficulty focusing by cutting out visual distractions. </li>            <li> I implemented the camera and speaker integration for the robot head as well as the motor system for the head and drive motors. I also worked on the Bluetooth connection on the robot side. I did all the voltage calculations and installed necessary estops and fuses to ensure the robot was safe.</li>
+            <li>Sourced and experimented with PDLC smart glass which can turn clear when there is no electric current applied and opaque when there is an electric current applied. </li>  
+            <li>I created a very intial prototype glass for later testing with a focus group.</li>
+        </ul>
+    </div>
+  </div>
+
+
+<div class="divider"></div>
+<div class="section"><h1 >Technical Explorations</h1></div>
+
+
+  <div class="project-grid">
+    <div class="project-card"
+         data-title="Combinatorial Design based Swarm Robot Communication Protocol"
+        data-body="
+        <iframe src='bibdfast.mp4' class='modal-video'></iframe>
+        <p>Simulation of the communication protocol was built in Python. robots not communicating are blue, transmitting robots are green and recieving robots are red.</p>
+        <br>
+        <p>Project Description:</p>
+        <ul>
+            <li>Worked on implementing a BIBD based method for pairwise communication in swarm robots.</li>
+            <li>The swarm robots were exploring a 10 by 10 grid and communication is necessary to ensure robots minimize overlapping coverage.</li>
+            <li>Showed BIBD based method provided a improvement over full communication.</li>
+            <li>Movement of robots is semi random where it checks if it can find an empty cell by checking if a unexplored cell within range can be found within 6 tries, if not it moves to a explored cell.</li>
+        </ul>
+        ">
+      <div class="icon-circle">🛰</div>
+      <h3>Combinatorial Design based Swarm Robot Communication Protocol</h3>
+    </div>
+
+    <div class="project-card"
+         data-title="Maze Solving Algorithms"
+        data-body="
+        <img src='maze solving.png' class='modal-image'>
+        <p>In the image, the red path is the path found by depth first search and the green is the path found with floyd warshall</p>
+        <br>
+        <p>Project Description:</p>
+        <ul>
+            <li>Worked on implementing the Floyd Warshall Algorithm for solving mazes.</li>
+            <li>The Floyd Warshall Algorithm is used to find the shortest path between all pairs of vertices in a weighted graph.</li>
+            <li>Explores the whole maze, accounting for loops, with a complexity of O^3 and then finds the shortest path between the start and end.</li>
+        </ul>
+        ">
+      <div class="icon-circle">🧩</div>
+      <h3>Maze Solving Algorithms</h3>
+    </div>
+
+
+    <div class="project-card"
+         data-title="Filtering EEG signals"
+        data-body="
+        <img src='labelled_circuit_digaram.png' class='modal-image'>
+        <p>The image shows the circuit built for analyzing EEG signals from the brain</p>
+        <br>
+        <p>Project Description:</p>
+        <ul>
+            <li>Used an EEG kit to record brainwaves.</li>
+            <li>Implemented a circuit using low pass, high pass filters and amplifiers to filter and amplify the signal to reduce noise and amplify the signals so they appear clearly on an oscilloscope. </li>
+            <li>Verified the circuit's functionality by using a bode plot to verify the cutoff frequencies and gain of the circuit.</li>
+        </ul>
+        ">
+      <div class="icon-circle">🧠</div>
+      <h3>Filtering EEG signals</h3>
+    </div>
+    </div>
+  <div class="project-grid">
+    <div class="project-card"
+         data-title="Detecting VOR signals using SDR"
+        data-body="
+        <img src='spectograph_signal.png' class='modal-image'>
+        <p>The image shows the output spectrograph measuring a signal we predict is the VOR signal from Boston Logan Airport</p>
+        <br>
+        <p>Project Description:</p>
+        <ul>
+            <li>Used the RTL-SDR dongle to detect VOR signals. From this investigation we discovered we could find a signal that may have been the VOR signals from the Boston logan airport.</li>
+            <li>Wrote a python script to interface with the RTL-SDR dongle and perform FFT on the resultant data multiple times at different timesteps </li>
+            <li>Plotted results in a windowed FFT or a spectrogram. </li>
+        </ul>
+        ">
+      <div class="icon-circle">📻</div>
+      <h3>Detecting VOR signals using SDR</h3>
+    </div>
+
+
+    <div class="project-card"
+         data-title="Game of Life in System Verilog"
+        data-body="
+        <iframe src='gameOfLife.mp4' class='modal-video'></iframe>
+        <p>The video shows a Demo of the 3 instances of Convey's Game of Life played on the red graph and blue color channels</p>
+        <br>
+        <p>Project Description:</p>
+        <ul>
+            <li>Created a version of Conway’s game of life to run on a 8x8 LED square powered by the IceBlinkPico FPGA board </li>
+            <li>This runs 3 games of life on one board. One using the red channel, one using the blue channel and one using the green channel. </li>
+            <li>Game was programmed in system Verilog</li>
+        </ul>
+        ">
+      <div class="icon-circle">🌍</div>
+      <h3>Game of Life in System Verilog</h3>
+    </div>
+
+  </div>
+
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-body"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
