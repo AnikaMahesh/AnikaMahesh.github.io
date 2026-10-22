@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Anika Mahesh's research on communication schedules for robot swarms.">
+  <title>Multi-Robot Communication | Anika Mahesh</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="detail-page">
+  <nav class="detail-nav" aria-label="Main navigation"><a href="index.html">Anika Mahesh</a><a href="index.html#projects">← All projects</a></nav>
+  <main class="case-study">
+    <header class="case-header">
+      <p class="section-label">Independent research · January–June 2026</p>
+      <h1>Distributed Communication for Multi-Robot Systems</h1>
+    </header>
+    <div class="case-body">
+      <section>
+        <p>I did this as an independent project from January to June 2026.</p>
+        <p>As robot swarms grow larger, communication becomes one of the biggest bottlenecks. My work investigates whether carefully designing who talks to whom can improve coordination, especially when communication is unreliable, such as in robotic environments.</p>
+        <p>Rather than using randomized communication schedules, I applied Balanced Incomplete Block Designs (BIBDs) to create deterministic schedules that balance information exchange across the swarm. In simulation, for both 7-agent and 91-agent swarms, this approach consistently reached consensus faster than both randomized and cyclic scheduling, particularly in high packet-loss environments.</p>
+        <p>This method achieved 19.3% faster consensus than randomized scheduling and 98.9% faster consensus than cyclic scheduling at a 0.7 packet-loss probability (91 agents), and 24.6% and 72.7% faster, respectively, on 7-agent swarms.</p>
+      </section>
+      <figure><img src="bibd_results.png" alt="Simulation results comparing consensus speed for BIBD, randomized, and cyclic schedules" loading="lazy"><figcaption>Consensus results for 7-agent and 91-agent simulations.</figcaption></figure>
+      <section><p>I presented this paper as the sole author at the International Conference on Robotics and Automation (ICRA) as part of the 2026 Workshop on Connected Autonomous Robotic Systems.</p></section>
+      <figure><img src="me_presenting.png" alt="Anika presenting her multi-robot research" loading="lazy"><figcaption>Presenting the research at the workshop.</figcaption></figure>
+      <section>
+        <p>I want to apply this to a real system. I am thinking about multi-agent systems for mapping terrain or coding. I am curious whether varying the communication topology would reduce communication overhead and result in a better final map and less rework. Additionally, another goal would be to remove the assumption that the swarm has to be fully connected.</p>
+        <p>I learned how to complete a research project and how to present it effectively to a large group of people. I also learned about multi-agent coordination and how to apply concepts from combinatorics to swarm robots.</p>
+        <p class="resource-links"><a href="https://drive.google.com/file/d/1oH0__WBlWXNuG5hrh0momxHIHfdMd0qC/view?usp=sharing" target="_blank" rel="noopener noreferrer">Read the paper ↗</a><a href="https://sites.google.com/view/icra26-connected-robots?pli=1&amp;authuser=0" target="_blank" rel="noopener noreferrer">Workshop ↗</a></p>
+      </section>
+    </div>
+    <a class="back-link" href="index.html#projects">← Back to projects</a>
+  </main>
+</body>
+</html>

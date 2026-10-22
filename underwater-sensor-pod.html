@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Anika Mahesh's serviceable underwater temperature sensor pod project.">
+  <title>Underwater Sensor Pod | Anika Mahesh</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="detail-page">
+  <nav class="detail-nav" aria-label="Main navigation"><a href="index.html">Anika Mahesh</a><a href="index.html#projects">← All projects</a></nav>
+  <main class="case-study">
+    <header class="case-header">
+      <p class="section-label">Hardware · Olin CREST Lab · Spring 2026</p>
+      <h1>Underwater Sensor Pod</h1>
+      <p class="case-lede">A serviceable, lower-cost pod for collecting temperature data underwater.</p>
+    </header>
+    <div class="case-body">
+      <section>
+        <p>Sensor pods are often used to take measurements underwater. Temperature-measuring sensor pods are especially important for measuring phenomena such as lake thermoclines, which could be used to find biological hotspots. However, many underwater sensor pods are expensive and difficult to service. This makes it difficult to use or swap out sensors and perform maintenance. The goal of this project was to create an inexpensive, serviceable sensor pod.</p>
+        <p>The sensor pod records underwater data such as temperature and depth data from lakes. It is serviceable and can be opened and closed to change batteries or change the sensors used. It stores data on an SD card, which can be removed and inspected. The current prototype records temperature data over time, stores it on an SD card, and can be deployed underwater in a capsule. I designed the CAD, machined the sensor pod, prototyped the circuit, programmed the ESP32, and also deployed the sensor pod in a bucket overnight with a napkin to test waterproofing.</p>
+      </section>
+      <figure><img src="labeled_sensor_pod.png" alt="Labeled diagram of the underwater sensor pod components" loading="lazy"><figcaption>The serviceable sensor pod and its components.</figcaption></figure>
+      <figure><img src="pod_real.png" alt="Built underwater sensor pod prototype" loading="lazy"><figcaption>The built sensor pod prototype.</figcaption></figure>
+      <section>
+        <p>I created a waterproof sensor pod that constantly logged data from a temperature probe to a CSV file stored on an SD card. It logged raw voltages from the sensor as well as the calculated temperature. The process and all the schematics and code are open-sourced on GitHub for anyone to use.</p>
+        <p>This project gave me experience building a complete physical sensing system rather than working primarily in software. I learned how to machine components on a lathe, design and precisely manufacture O-ring grooves for waterproof sealing, prototype the electronics, and program an ESP32 to read sensor data and log it to an SD card.</p>
+      </section>
+      <figure><img src="circuit diagram.png" alt="Circuit diagram showing the ESP32, SD card module, temperature probe, and power connections" loading="lazy"><figcaption>The sensor pod electronics.</figcaption></figure>
+      <figure><img src="lathe_drawing.png" alt="Machining drawing for the sensor pod cap" loading="lazy"><figcaption>Machining drawing for the pod cap.</figcaption></figure>
+      <section>
+        <p>One of the biggest challenges was waterproofing the enclosure. I learned how sensitive a physical system can be to machining tolerances, sealing, and assembly, and how problems that seem simple in CAD can become much more difficult when building and testing the actual hardware. Taking the sensor pod from a CAD model to a deployable prototype gave me a better understanding of the full process of designing, manufacturing, programming, and validating a physical system.</p>
+        <p class="resource-links"><a href="https://github.com/AnikaMahesh/Underwater-Sensor-Pod" target="_blank" rel="noopener noreferrer">View code and schematics ↗</a></p>
+      </section>
+    </div>
+    <a class="back-link" href="index.html#projects">← Back to projects</a>
+  </main>
+</body>
+</html>
